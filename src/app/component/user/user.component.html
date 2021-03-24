@@ -1,0 +1,22 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>İsim</th>
+            <th>Soyisim</th>
+            <th>Email</th>
+            <th>Parola(Hash)</th>
+            <th>Parola(Salt)</th>
+            <th>Statü</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let user of users">
+        <td>{{user.userId}}</td>
+        <td>{{user.firstName}}</td>
+        <td>{{user.lastName}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.passwordHash}}</td>
+        <td>{{user.passwordSalt}}</td>
+        <td>{{user.status}}</td>
+    </tr>
+</table>
